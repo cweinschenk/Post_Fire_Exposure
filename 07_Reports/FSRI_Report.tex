@@ -1,0 +1,296 @@
+\documentclass[12pt,oneside]{book}
+\input{commoncommands}
+
+% Rename chapter headings
+\renewcommand{\chaptername}{}
+\renewcommand{\bibname}{References}
+
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\chead{}
+\renewcommand{\headrulewidth}{0pt}
+
+% COMMENT TO REMOVE WATERMARK
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{1}
+
+\begin{document}
+\pagenumbering{gobble}
+\bibliographystyle{unsrt}
+	
+\begin{minipage}[t][9in][s]{6.25in}
+
+\headerB{
+Cleverly Named Title \\
+To Describe Our Awesome \\ 
+Work \\
+}
+
+\normalsize
+\headerC{
+	\flushleft{
+	Author 1 \\
+	Author 2 \\
+	\vspace{0.2in}
+	UL Firefighter Safety Research Institute \\
+	Columbia, MD 20145 \\
+	\vspace*{2\baselineskip}
+	} 
+}
+	\vfill
+
+\begin{flushright}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{UnderwritersLaboratories_TM} \\ 
+\end{minipage} \hfill
+\begin{minipage}{0.25\textwidth}
+\includegraphics[width=2.0in]{FSRI_GraphicShield} \\ 
+\end{minipage}
+\end{flushright}
+
+\scriptsize
+\flushright{Copyright 2020. \textcopyright Underwriters Laboratories Inc. All rights reserved. UL and the UL logo are trademarks of UL LLC}
+\end{minipage}
+
+\newpage
+\hspace{5in}
+\newpage
+
+\begin{minipage}[t][9in][s]{6.25in}
+\pagenumbering{gobble}
+
+\headerB{
+Cleverly Named Title \\
+To Describe Our Awesome \\ 
+Work \\
+}
+
+\headerC{
+	\flushleft{
+	Author 1 \\
+	Author 2 \\
+	\vspace{0.2in}
+	{UL Firefighter Safety Research Institute \\
+	Columbia, MD 21045\\}
+	}
+
+	\flushleft{\today \\}
+}
+
+\vfill
+
+\begin{flushright}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{UnderwritersLaboratories_TM} \\ 
+\end{minipage} \hfill
+\begin{minipage}{0.25\textwidth}
+\includegraphics[width=2.0in]{FSRI_GraphicShield} \\ 
+\end{minipage}
+\end{flushright}
+\titlesigs
+
+\scriptsize
+\flushright{Copyright 2020. \textcopyright Underwriters Laboratories Inc. All rights reserved. UL and the UL logo are trademarks of UL LLC}
+\end{minipage}
+
+\newpage
+
+\begin{minipage}[t][9in][s]{6.25in}
+
+\flushleft{In no event shall UL be responsible to anyone for whatever use or non-use is made of the information contained in this Report and in no event shall UL, its employees, or its agents incur any obligation or liability for damages including, but not limited to, consequential damage arising out of or in connection  with the use or inability to use the information contained in this Report. Information conveyed by this Report applies only to the specimens actually involved in these tests. UL has not established a factory Follow-Up Service Program to determine the conformance of subsequently produced material, nor has any provision been made to apply any registered mark of UL to such material. The issuance of this Report in no way implies Listing, Classification or Recognition by UL and does not authorize the use of UL Listing, Classification or Recognition Marks or other reference to UL on or in connection with the product or system.
+}
+
+\vspace{3in}
+\vfill
+\hspace{1in}
+
+\end{minipage}
+
+\newpage
+
+\frontmatter
+
+\pagestyle{plain}
+\pagenumbering{roman}
+
+\cleardoublepage
+\phantomsection
+\tableofcontents
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\chapter{List of Abbreviations}
+
+\begin{tabbing}
+\hspace{1.5in} \= \\
+UL 	    \> Underwriters Laboratories \\
+UL FSRI \> UL Firefighter Safety Research Institute \\
+\end{tabbing}
+
+\mainmatter
+
+\chapter*{Acknowledgments}
+\pagenumbering{gobble}
+
+\begin{table}[!ht]
+	\centering
+	\caption*{Generic Table}
+	\begin{tabular}{ll}
+		\toprule[1.5pt]
+		Name & Awesomeness \\ 
+		\midrule
+		Neil Armstrong		 & First person to walk on the moon \\
+		Edith Clarke		 & First female ECE professor \\
+		John Goodenough		 & Rechargeable Lithium-Ion battery \\
+		Nikola Telsa		 & Modern alternating current \\  
+		\bottomrule[1.25pt]
+	\end{tabular}
+\end{table}
+
+\newpage
+
+\chapter*{Abstract}
+
+\newpage
+\chapter{Introduction}
+\label{chap:intro}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Motivation}
+
+\section{Objectives}
+
+\chapter{Literature Review}
+\label{chap:lit_review}
+
+\chapter{Experimental Configuration}
+\label{chap:exp_config}
+
+\section{Experimental Structure}
+
+\section{Instrumentation}
+\label{sec:instrument}
+
+\subsection{Measurement Locations}
+\label{subsec:measure_locs}
+
+\subsection{Measurement Uncertainty}
+\label{subsec:uncertainty}
+
+\textit{\hl{Note: this template contains uncertainty information for a variety of different measurement types. Be sure to remove any types that aren't mentioned.}} 
+
+\textit{\hl{Additionally, although this section provides information about measurement uncertainty in paragraphs that are sufficient for a technical report,}\textbf{\hl{ it's highly recommended that the content obtained from this section is still reviewed after being copied to a technical report to verify the accuracy and applicability of the information.}}\hl{For example, it should be verified that the instrumentation described in the paragraphs below resemble the same type used during the experiments mentioned in the technical report.}}
+
+There are different components of uncertainty in the measured values reported in this document, specifically gas temperature, total heat flux, pressure, gas velocity, gas concentration, heat release rate, length, mass, structure leakage, and water flow rate. Uncertainties are grouped into two categories according to the method used to estimate them. Type A uncertainties are those evaluated by statistical methods, and Type B are those evaluated by other means~\cite{Taylor&Kuyatt:1994}. Type B analysis of systematic uncertainties involves estimating the upper ($+$~a) and lower ($-$~a) limits for the quantity in question such that the probability that the value would be in the interval ($\pm$~a) is essentially 100~\%. After estimating uncertainties by either Type A or B analysis, the uncertainties can be combined in quadrature to yield the combined standard uncertainty. Multiplying this combined standard uncertainty by a coverage factor of two results in an expanded uncertainty with a 95~\% confidence interval (2$\sigma$). For some components, such as the zero and calibration elements, uncertainties were derived from referenced instrument specifications. For other components, referenced research results and past experience with the instruments provided input for the uncertainty determination.
+
+\subsubsection*{Gas Temperature}
+According to Omega Engineering, the manufacturer of the thermocouple wire utilized during the experiments, the standard uncertainty in the temperature of the thermocouple wire itself is $\pm$~2.2~$^\circ$C at 277~$^\circ$C and $\pm$~9.5~$^\circ$C at 871~$^\circ$C~\cite{Omega:2004}. In addition to the uncertainty of the sensor itself, radiative effects to the thermocouple should be considered. Several studies have attempted to quantify these effects on thermocouple measurement uncertainty in compartment fires~\cite{Blevins:1999,Pitts:2003}. These studies indicated that when the thermocouple is located in the upper gas layer, the actual temperature of the surrounding gas is typically higher than the measured temperature, although this difference is not as pronounced as when the thermocouple is in the lower layer. When the thermocouple is in the lower layer, particularly during a fully involved compartment fire, the percent error in measured temperature can be much larger. Because of these radiative contributions, the expanded total uncertainty is estimated as $\pm$~15~\%.
+
+\subsubsection*{Heat Flux}
+The manufacturer of the heat flux gauges, Medtherm Corporation, reports a $\pm$~3~\% calibration expanded uncertainty for the devices~\cite{Medtherm:2003}. Results from an international study on total heat flux gauge calibration and response demonstrated that the total expanded uncertainty of a Schmidt-Boelter gauge is typically $\pm$~8~\%~\cite{Pitts:2006}.
+
+\subsubsection*{Pressure}
+Differential pressure reading uncertainty components were derived from pressure transducer instrument specifications and previous experience with pressure transducers. Each transducer was factory calibrated by the manufacturer to verify that the zero and span of the transducer resulted in an accuracy of $\pm$~1~\%~\cite{Setra:2002}. The total expanded uncertainty associated with the pressure data from these experiments is estimated to be $\pm$~10~\%.
+
+\subsubsection*{Gas Velocity}
+A gas velocity measurement study that focused on flow through doorways during pre-flashover compartment fires yielded total expanded uncertainties ranging from $\pm$~14~\% to $\pm$~22~\% for measurements from BDPs similar to those used throughout the experiments described in this report~\cite{Bryant:FSJ2009}. The total expanded uncertainty for gas velocity measured during these experiments is estimated to be $\pm$~18~\%.
+
+\subsubsection*{Gas Concentration}
+The oxygen concentration measurement range of the OxyMat6 was 0--25~\%. The gas sampling instruments used throughout the experiments described in this report have demonstrated a relative expanded uncertainty of $\pm$~1~\% when compared to span gas volume fractions~\cite{Bundy:2007}. According to a study by Lock~et~al.~\cite{Lock:1}, the non-uniformities and movement of exhaust gases in addition to the limited amount of sampling points considered in each experiment result in an estimated expanded uncertainty of $\pm$~12~\%.
+
+\subsubsection*{Heat Release Rate}
+\hl{Will depend upon technique used to measure HRR. Need to specify fuels for which HRR was characterized.} 
+
+To understand the energy release of the fuel loads (i.e., the primary ignition source) used in these experiments, fuels were burned in Underwriters Laboratory's oxygen consumption calorimetry laboratory in Northbrook, Ill was The oxygen consumption calorimeter is sized to handle up to a 10~MW fire with a 31~ft (9.4~m) diameter conical hood. In a previous study, Bryant and Mullholland~\cite{Bryant:FM2008} estimated the uncertainty of oxygen consumption calorimeters measuring high heat release rate fires at $\pm$~11\%. They identified several sources of error within the calorimeter, with one of the primary sources being the uncertainty in the gas concentration measurements.
+
+\subsubsection*{Length}
+Length measurements, such as the room dimensions and instrumentation locations, were made with either a hand held laser measurement device having an accuracy of 0.25~in. ($\pm$~6.0~mm) over a range of 2~ft (0.6~m) to 50~ft (15.2~m)~\cite{StanleyTools} or $\pm$~0.02~in. ($\pm$~0.51~mm) resolution steel measuring tapes manufactured in compliance with NIST Manual 44~\cite{Butcher:2012}, which specifies a tolerance of $\pm$~0.06~in. ($\pm$~1.5~mm) for 30~ft (9.1~m) tapes and $\pm$~0.25~in. ($\pm$~6.4~mm) for 100~ft (30.5~m) tapes. These uncertainties are all well within the precision of the reported dimensions, which are typically rounded to the nearest inch. Some issues, such as levelness of the device and ``soft'' edges on upholstered furniture, result in an estimated expanded uncertainty of $\pm$~1.0~\% for reported length measurements.
+
+\subsubsection*{Mass}
+The load cell used to weigh the fuels prior to the experiments had a range of 0~lb (0~kg) to 441~lb (200~kg) with a resolution of 0.11~lb (0.05~kg) and a calibration uncertainty within 1~\%~\cite{Ohaus:2000}. The total expanded uncertainty for the fuel weights measured by the load cell that are presented in this report is estimated to be less than $\pm$~5~\%.
+
+\subsubsection*{Structure Leakage} 
+To characterize ventilation within the structure, an air leakage measurement system (Model~5101) was used to measure the amount of leakage associated with the training prop before each test~\cite{retrotec:leakage}. \textit{ASTM~E779-10, Standard Test Method for Determining Air Leakage Rate by Fan Pressurization} was followed to determine the air leakage rate of the prop before each experiment~\cite{astm_e779}. The measured leakage rates were recorded in units of air changes per hour at 50~Pa (ACPH50). Retrotec, the manufacturer of the leakage measurement system, reports an accuracy of $\pm$~5~\% for the system.
+
+\subsubsection*{Water Flow Rate}
+Water flow rate was measured with a 1.5~in. (3.8~cm) diameter electromagnetic flow meter from Badger Meter, Inc. (Model~M2000). The meter consisted of stainless steel pipe lined with a non-conductive material. Energized coils on the outside of the non-conductive material imposed a magnetic field across the pipe, and when the conductive fluid (water) flowed across the magnetic field, a voltage proportional to flow velocity was produced. The manufacturer reports a $\pm$~0.25~\% calibration uncertainty for the accuracy of the measurement~\cite{Badger:2015}.
+
+\section{Fuel Load}
+
+\chapter{Experimental Procedure}
+\label{chap:exp_procedure}
+
+The following structure should be used to define tables:
+\begin{verbatim}
+	\begin{table}[!ht]
+	    \centering
+	    \caption{Example of Style in which Table Caption Should be 
+        Written}
+	    \label{tab:<ref_name>}
+	    \begin{tabular}{lc}
+	        \toprule[1.5pt]
+	        <header\_1> & <header\_2> \\
+	        \midrule
+	        <row\_1\_content>     & <row\_1\_content>     \\
+	        <row\_2\_content>     & <row\_2\_content>     \\
+	        \bottomrule[1.25pt]
+	    \end{tabular}
+	\end{table}
+\end{verbatim}
+
+This will produce a table like the one below
+\begin{table}[!ht]
+	\centering
+	\caption{Example of Style in which Table Caption Should be Written}
+	\label{tab:<ref_name>}
+	\begin{tabular}{lc}
+		\toprule[1.5pt]
+		<header\_1> & <header\_2> \\
+		\midrule
+		<row\_1\_content>     & <row\_1\_content>     \\
+		<row\_2\_content>     & <row\_2\_content>     \\
+		\bottomrule[1.25pt]
+	\end{tabular}
+\end{table}
+
+Example of Figure Definition
+
+% \begin{figure}[!ht]
+% 	\centering
+% 	\includegraphics[width=<set_width>]{<file_location>}
+% 	\caption[Title of Figure for List of Figures]{Write the figure caption in sentence form. The caption should contain enough detail for the reader to thoroughly understand the figure. So, if the figure is a data plot, be sure to describe the meaning of the various line colors, styles, symbols, etc. used.}
+% 	\label{fig:<ref_name>}
+% \end{figure}
+
+
+\chapter{Results \& Discussion}
+
+
+\chapter{Tactical Considerations}
+
+
+\chapter{Research Needs}
+
+
+\chapter{Summary}
+
+
+\bibliography{UL_general,UL_FSRI,NFPA_std,NIOSH}
+
+\clearpage
+
+\appendix
+\captionsetup{list=no}
+
+\end{document}
